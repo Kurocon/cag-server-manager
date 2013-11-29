@@ -1,0 +1,104 @@
+h5 {
+	font-weight:bold;
+	font-size:16px;
+	color:rgb(44,104,119);
+}
+
+.smallColumn{
+	width:60px;
+	text-align: center;
+}
+.mediumColumn{
+	width:120px;
+	text-align: center;
+}
+
+.row{
+	height:34px;
+	min-height:34px;
+	max-height:34px;
+}
+
+.statusCode{
+	position:relative;
+	top:-2px;
+	float:right;
+}
+
+.statusImage{
+	float:left;
+}
+
+
+/* serverStatusses */
+#serverStatus1, #serverStatus2, #serverStatus3, #serverStatus4 {
+	display:none;
+}
+
+#pcStatus1, #pcStatus2, #pcStatus3, #pcStatus4 {
+	display:none;
+}
+
+#cameraStatus1, #cameraStatus2 {
+	display:none;
+}
+
+#otherStatus1, #otherStatus2 {
+	display:none;
+}
+
+
+/* statusCovers */
+#serverStatusCover1, #serverStatusCover2, #serverStatusCover3, #serverStatusCover4 {
+	position:relative;
+	display:inline;
+	top:-3px;
+	left:3px;
+}
+
+#pcStatusCover1, #pcStatusCover2, #pcStatusCover3, #pcStatusCover4 {
+	position:relative;
+	display:inline;
+	top:-3px;
+	left:3px;
+}
+
+#cameraStatusCover1, #cameraStatusCover2 {
+	position:relative;
+	display:inline;
+	top:-3px;
+	left:3px;
+}
+
+#otherStatusCover1, #otherStatusCover2 {
+	position:relative;
+	display:inline;
+	top:-3px;
+	left:3px;
+}
+
+
+/* statusImages */
+#serverStatusImage1, #serverStatusImage2, #serverStatusImage3, #serverStatusImage4 {
+	position:relative;
+	display:inline;
+	left:5px;
+}
+
+#pcStatusImage1, #pcStatusImage2, #pcStatusImage3, #pcStatusImage4 {
+	position:relative;
+	display:inline;
+	left:5px;
+}
+
+#cameraStatusImage1, #cameraStatusImage2 {
+	position:relative;
+	display:inline;
+	left:5px;
+}
+
+#otherStatusImage1, #otherStatusImage2 {
+	position:relative;
+	display:inline;
+	left:5px;
+}

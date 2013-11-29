@@ -1,0 +1,50 @@
+.smallColumn{
+	width:60px;
+	text-align: center;
+}
+.mediumColumn{
+	width:120px;
+	text-align: center;
+}
+
+.row{
+	height:34px;
+	min-height:34px;
+	max-height:34px;
+}
+
+.statusCode{
+	position:relative;
+	top:-2px;
+	float:right;
+}
+
+.statusImage{
+	float:left;
+}
+
+#status1{display:none}
+#status2{display:none}
+#status3{display:none}
+#status4{display:none}
+#status5{display:none}
+#status6{display:none}
+#status7{display:none}
+#status8{display:none}
+#status9{display:none}
+#status10{display:none}
+#status11{display:none}
+#status12{display:none}
+
+#statusCover1, #statusCover2, #statusCover3, #statusCover4, #statusCover5, #statusCover6, #statusCover7, #statusCover8, #statusCover9, #statusCover10, #statusCover11, #statusCover12 {
+	position:relative;
+	display:inline;
+	top:-3px;
+	left:3px;
+} 
+
+#statusImage1, #statusImage2, #statusImage3, #statusImage4, #statusImage5, #statusImage6, #statusImage7, #statusImage8, #statusImage9, #statusImage10, #statusImage11, #statusImage12 {
+	position:relative;
+	display:inline;
+	left:5px;
+}
