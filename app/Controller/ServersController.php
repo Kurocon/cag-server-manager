@@ -8,7 +8,7 @@ class ServersController extends AppController{
 		$this->set('servers', $this->Server->find('all'));
 	}
 
-	public function detail(){
+	public function detail($id){
 		$this->set('server', $this->Server->findById($id));
 	}
 
