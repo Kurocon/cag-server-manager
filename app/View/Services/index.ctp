@@ -19,25 +19,25 @@ function getServiceTable($services){
 	</tr>
 EOF;
 
-	foreach ($servers as $id => $server) {
+	foreach ($services as $id => $service) {
 
-		$server['Service']['url1'] = "<a href='http://".$server['Service']['url1']."/'>".$server['Service']['url1']."</a>";
-		$server['Service']['url2'] = "<a href='//".$server['Service']['url2']."/'>".$server['Service']['url2']."</a>";
+		$service['Service']['url1'] = "<a href='http://".$service['Service']['url1']."/'>".$service['Service']['url1']."</a>";
+		$service['Service']['url2'] = "<a href='//".$service['Service']['url2']."/'>".$service['Service']['url2']."</a>";
 
-		$editURI = "<a href='/services/edit/".$server['Service']['id']."'>EDIT</a>";
-		$deleteURI = "<a href='/services/delete/".$server['Service']['id']."'>DELETE</a>";
+		$editURI = "<a href='/services/edit/".$service['Service']['id']."'>EDIT</a>";
+		$deleteURI = "<a href='/services/delete/".$service['Service']['id']."'>DELETE</a>";
 
 		$html .= <<<EOF
 
 	<tr>
-		<td>{$server['Service']['id']}</td>
-		<td>{$server['Service']['server_id']}</td>
-		<td>{$server['Service']['name']}</td>
-		<td>{$server['Service']['internalport']}</td>
-		<td>{$server['Service']['externalport']}</td>
-		<td>{$server['Service']['description']}</td>
-		<td>{$server['Service']['url1']}</td>
-		<td>{$server['Service']['url2']}</td>
+		<td>{$service['Service']['id']}</td>
+		<td>{$service['Service']['server_id']}</td>
+		<td>{$service['Service']['name']}</td>
+		<td>{$service['Service']['internalport']}</td>
+		<td>{$service['Service']['externalport']}</td>
+		<td>{$service['Service']['description']}</td>
+		<td>{$service['Service']['url1']}</td>
+		<td>{$service['Service']['url2']}</td>
 		<td>{$editURI}</td>
 		<td>{$deleteURI}</td>
 	</tr>

@@ -1,6 +1,8 @@
 <?php
 
 print_r($server);
+print("</br></br>");
+print_r($services);
 
 function getPageMenu($server){
 	$editURI = "<a href='/servers/edit/".$server['Server']['id']."'>EDIT</a>";
