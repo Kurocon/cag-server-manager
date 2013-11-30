@@ -19,7 +19,11 @@ class ServicesController extends AppController{
 	}
 
 	public function delete($id){
-		$this->set('server', $this->Service->findById($id));
+
+		$service = $this->Service->findById($id);
+
+		$this->set('service', $this->Service->findById($id));
+		$this->set('server', $this->Server->findById($service['Service']['server_id']));
 		if($this->request->is('post')){
 			if($this->request->data('Service.you_sure') === "1"){
 				
