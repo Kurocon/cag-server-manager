@@ -29,17 +29,17 @@ function getServerDetails($server){
 
 	$html = <<<EOF
 
-	<h3>Server Name:</h3>
+	<h4>Server Name:</h4>
 	<p>{$server_name}</p>
-	<h3>Server Type:</h3>
+	<h4>Server Type:</h4>
 	<p>{$server_type}</p>
-	<h3>Server Hostname:</h3>
+	<h4>Server Hostname:</h4>
 	<p>{$server_host}</p>
-	<h3>Internal IP:</h3>
+	<h4>Internal IP:</h4>
 	<p>{$server_intr}</p>
-	<h3>External Address:</h3>
+	<h4>External Address:</h4>
 	<p>{$server_extr}</p>
-	<h3>Services:</h3>
+	<h4>Services:</h4>
 	<p>{$server_serv}</p>
 
 EOF;
@@ -53,7 +53,7 @@ EOF;
 	<h2>Server Details: <?php echo $server['Server']['name']; ?></h2>
 </div>
 <div id="menu">
-	<?php echo getPageMenu(); ?>
+	<?php echo getPageMenu($server); ?>
 </div>
 <div id="pageContent">
 	<?php echo getServerDetails($server); ?>
