@@ -19,6 +19,7 @@ EOF;
 
 	foreach ($servers as $id => $server) {
 
+		$server['Server']['name'] = "<a href='/servers/detail/".$server['Server']['id']."'>".$server['Server']['name']."</a>";
 		$server['Server']['internal'] = "<a href='http://".$server['Server']['internal']."/'>".$server['Server']['internal']."</a>";
 		$server['Server']['external'] = "<a href='http://".$server['Server']['external']."/'>".$server['Server']['external']."</a>";
 		$server['Server']['hostname'] = "<a href='//".$server['Server']['hostname']."/'>".$server['Server']['hostname']."</a>";
@@ -65,7 +66,9 @@ EOF;
 
 }
 ?>
-
+<div id="title">
+	<h3>Server List</h3>
+</div>
 <div id="menu">
 	<?php echo getPageMenu(); ?>
 </div>
