@@ -47,6 +47,10 @@ EOF;
 	return $html;
 }
 
+function getServiceList($services){
+
+}
+
 ?>
 
 <div id="title">
@@ -57,4 +61,7 @@ EOF;
 </div>
 <div id="pageContent">
 	<?php echo getServerDetails($server); ?>
+</div>
+<div id="serviceList">
+	<?php echo getServiceList($services); ?>
 </div>

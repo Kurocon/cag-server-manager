@@ -2,6 +2,7 @@
 
 class ServersController extends AppController{
 
+	public $uses = array('Server', 'Service');
 	public $helpers = array("Html", "Form");
 
 	public function index(){
@@ -10,6 +11,7 @@ class ServersController extends AppController{
 
 	public function detail($id){
 		$this->set('server', $this->Server->findById($id));
+		$this->set('services', $this->Service->findByServerId($id));
 	}
 
 	public function add(){

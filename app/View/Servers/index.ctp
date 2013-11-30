@@ -23,8 +23,6 @@ EOF;
 		$server['Server']['internal'] = "<a href='http://".$server['Server']['internal']."/'>".$server['Server']['internal']."</a>";
 		$server['Server']['external'] = "<a href='http://".$server['Server']['external']."/'>".$server['Server']['external']."</a>";
 		$server['Server']['hostname'] = "<a href='//".$server['Server']['hostname']."/'>".$server['Server']['hostname']."</a>";
-		$server['Server']['created'] = "";
-		$server['Server']['modified'] = "";
 
 		$editURI = "<a href='/servers/edit/".$server['Server']['id']."'>EDIT</a>";
 		$deleteURI = "<a href='/servers/delete/".$server['Server']['id']."'>DELETE</a>";
