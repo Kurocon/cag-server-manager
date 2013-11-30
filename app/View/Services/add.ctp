@@ -2,7 +2,7 @@
 
 echo $this->Form->create('Service', array('type' => 'post', 'url' => array('controller' => 'services', 'action' => 'save')));
 echo $this->Form->hidden('id');
-echo $this->Form->input('server_id', array('label' => 'Host Server ID'));
+echo $this->Form->input('server_id', array('label' => 'Host Server ID', 'type' => 'number'));
 echo $this->Form->input('name', array('label' => 'Service Name'));
 echo $this->Form->input('internalport', array('label' => 'Internal Port'));
 echo $this->Form->input('externalport', array('label' => 'External Port'));
